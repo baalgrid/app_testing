@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New test app</title>
+	<script src=js/zepto.min.js></script>
+	<script src=js/SILLY.js></script>
+</head>
+<body>
+	<button id= 'hello'>DO IT</button>
+	<button id= 'clear'>Clear</button>
+	<div id= 'results'></div>
+	<script type="text/javascript">
+		$('#hello').click(function(){
+			SILLY.DoIt($('#results'));
+		});
+		$('#clear').click(function(){
+			$('#results').html('');
+		});
+	</script>
+</body>
+</html>>	
